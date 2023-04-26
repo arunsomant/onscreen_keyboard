@@ -194,13 +194,13 @@ class _OnscreenKeyboardWidgetState extends State<OnscreenKeyboardWidget> {
                         label: new Text(
                           'CLEAR',
                           style: new TextStyle(
-                              fontSize: 15, fontWeight: FontWeight.bold,color:Colors.white),
+                              fontSize: 14, fontWeight: FontWeight.bold,color:Colors.white),
                         ),
                       ),
                     ),
                     Flexible(
                       child: new Button(
-                        autofocus: true,
+                        autofocus: false,
                         focusColor: widget.focusColor ?? widget.focusColor,
                         borderColor: widget.borderColor ?? widget.borderColor,
                         buttonColor: widget.buttonColor ?? widget.buttonColor,
@@ -289,13 +289,13 @@ class _OnscreenKeyboardWidgetState extends State<OnscreenKeyboardWidget> {
         ),
         itemBuilder: (context, index) {
           return new Button(
-            autofocus: false,
+            autofocus: labels[index] == 'a' ? true : false,
             focusColor: widget.focusColor ?? widget.focusColor,
             borderColor: widget.borderColor ?? widget.borderColor,
             buttonColor: widget.buttonColor ?? widget.buttonColor,
             label: new Text(
               labels[index],
-              style: new TextStyle(fontSize: 14,color:Colors.white),
+              style: new TextStyle(fontSize: 15,color:Colors.white),
             ),
             onPressed: () {
               text = text! + labels[index];
