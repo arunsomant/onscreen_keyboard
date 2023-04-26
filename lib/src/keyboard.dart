@@ -194,7 +194,7 @@ class _OnscreenKeyboardWidgetState extends State<OnscreenKeyboardWidget> {
                         label: new Text(
                           'CLEAR',
                           style: new TextStyle(
-                              fontSize: 17, fontWeight: FontWeight.bold,color:Colors.white),
+                              fontSize: 15, fontWeight: FontWeight.bold,color:Colors.white),
                         ),
                       ),
                     ),
@@ -260,13 +260,13 @@ class _OnscreenKeyboardWidgetState extends State<OnscreenKeyboardWidget> {
                       return Text(
                         'ABC',
                         style: new TextStyle(
-                            fontSize: 17, fontWeight: FontWeight.bold,color:Colors.white),
+                            fontSize: 15, fontWeight: FontWeight.bold,color:Colors.white),
                       );
                     } else {
                       return Text(
                         '&123',
                         style: new TextStyle(
-                            fontSize: 17, fontWeight: FontWeight.bold,color:Colors.white),
+                            fontSize: 15, fontWeight: FontWeight.bold,color:Colors.white),
                       );
                     }
                   },
@@ -295,7 +295,7 @@ class _OnscreenKeyboardWidgetState extends State<OnscreenKeyboardWidget> {
             buttonColor: widget.buttonColor ?? widget.buttonColor,
             label: new Text(
               labels[index],
-              style: new TextStyle(fontSize: 25,color:Colors.white),
+              style: new TextStyle(fontSize: 14,color:Colors.white),
             ),
             onPressed: () {
               text = text! + labels[index];
